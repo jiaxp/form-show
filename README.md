@@ -47,6 +47,7 @@ labelWidth             String/Number      Label宽度                   -
 labelSuffix            String             Label后缀                   ：
 labelPosition          String             Label对齐方式（left/right）  right
 backgroundColor        String             背景色                      #ffffff
+borderColor            String             边框颜色                    #E4E7ED
 
 FormShowCol
 字段名称                类型                说明                        默认值

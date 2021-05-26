@@ -17,10 +17,20 @@ export default {
     return {}
   },
   computed: {
+    form () {
+      let parent = this.$parent
+      let parentName = parent.$options.name
+      while (parentName !== 'FormShow') {
+        parent = parent.$parent
+        parentName = parent.$options.name
+      }
+      return parent
+    },
     colStyle () {
       let span = Math.min(24, this.span)
       return {
-        width: `${((100 * span) / 24)}%`
+        width: `${((100 * span) / 24)}%`,
+        borderColor: `${this.form.borderColor}`
       }
     }
   },

@@ -4,7 +4,7 @@
       <span class="form-show_item__label__text">{{ label }}</span>
       <span class="form-show_item__label__suffix">{{ label ? form.labelSuffix : '' }}</span>
     </label>
-    <div class="form-show_item__content">
+    <div class="form-show_item__content" :style="contentStyle">
       <slot />
     </div>
   </div>
@@ -46,6 +46,11 @@ export default {
         ret.textAlign = labelPosition
       }
       return ret
+    },
+    contentStyle () {
+      return {
+        borderColor: `${this.form.borderColor}`
+      }
     }
   },
   mounted () {

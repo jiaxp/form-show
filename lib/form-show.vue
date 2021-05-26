@@ -20,6 +20,10 @@ export default {
     backgroundColor: {
       type: String,
       default: '#ffffff'
+    },
+    borderColor: {
+      type: String,
+      default: '#E4E7ED'
     }
   },
   data () {
@@ -30,7 +34,8 @@ export default {
   computed: {
     styleCss () {
       return {
-        backgroundColor: this.backgroundColor
+        backgroundColor: this.backgroundColor,
+        borderColor: this.borderColor
       }
     }
   },
