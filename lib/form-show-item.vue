@@ -58,6 +58,7 @@ export default {
       this.$refs.label.style.width = 'auto'
       this.$nextTick(() => {
         let labelWidth = this.$refs.label.clientWidth
+        this.$refs.label.style.width = this.form.maxLabelWidth
         this.form.setLabelWidth(labelWidth)
       })
     }
