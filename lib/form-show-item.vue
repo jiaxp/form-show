@@ -54,12 +54,13 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      let labelWidth = this.$refs.label.clientWidth
-      if (!this.form.labelWidth) {
+    if (!this.form.labelWidth) {
+      this.$refs.label.style.width = 'auto'
+      this.$nextTick(() => {
+        let labelWidth = this.$refs.label.clientWidth
         this.form.setLabelWidth(labelWidth)
-      }
-    })
+      })
+    }
   },
   methods: {}
 }
