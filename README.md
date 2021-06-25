@@ -8,7 +8,7 @@
 npm install form-show-cs --save
 ```
 
-### Use
+### Usage
 ``` bash
 import FormShow from 'form-show-cs'
 
