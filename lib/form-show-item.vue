@@ -101,6 +101,7 @@ export default {
     > .form-show_item__content {
       flex: 1;
       word-break: break-all;
+      white-space: pre-wrap;
       border-left: 1px solid #E4E7ED;
       padding: 6px 12px;
     }
